@@ -1,7 +1,7 @@
-#Github简介
+# Github简介
 ----------------------
 
-##一、项目下各模块简介  
+## 一、项目下各模块简介  
 
 * **Code**  
 项目的代码文件，对项目的介绍通常在README.md文件中，需要使用markdown语法
@@ -112,9 +112,9 @@ git reset xx.txt    ——重置暂存区中的文件
 | git reflog | 查看每一次操作，包括回退版本的id |  
 | git checkout -- <FileName> | 撤回修改<br>修改后的文件在暂存区，则回到 git add 前的状态<br>修改后的文件没有放在暂存区，则回到和版本库一样的状态 |  
 | git reset HEAD <FileName> | 将暂存区的文件回退到工作区 |  
-| 小结 |场景1：修改错误的文件在工作区，还没有提交到暂存区，使用git checkout -- <FileName><br>
-场景2：修改错误的文件已经add到暂存区，先使用 git reset HEAD <FileName> 回退到工作区，再使用git checkout -- <FileName><br>
-场景3：修改错误的文件已经commit，使用git reset -- hard HEAD^ 回退到上一个版本 |  
+| 小结 | 场景1：修改错误的文件在工作区，还没有提交到暂存区，使用git checkout -- <FileName> |  
+| |场景2：修改错误的文件已经add到暂存区，先使用 git reset HEAD <FileName> 回退到工作区，再使用git checkout -- <FileName> |  
+| |场景3：修改错误的文件已经commit，使用git reset -- hard HEAD^ 回退到上一个版本|    
 | git rm <FileName> | 删除文件 |  
 | git checkout -b <branchName> | 创建并切换到分支 |  
 | git merge <branchName> | 合并指定分支到当前分支 |  
