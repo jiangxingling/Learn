@@ -99,23 +99,23 @@ git reset xx.txt    ——重置暂存区中的文件
 | cd \<FolderName\> | 进入文件夹目录下 |  
 | git init | 生成 .git 文件夹，创建一个空的Git仓库或重新初始化一个现有仓库 |  
 | ls -a | 列出目录中的所有项（包括隐藏项） |  
-| git add <FileName> | 把文件添加到暂存区 |  
+| git add \<FileName\> | 把文件添加到暂存区 |  
 | git commit -m "说明" | 将文件提交到分支，添加提交信息，提交成功后提示有几个文件被改动 |  
 | git status | 查看状态（哪些文件被改动过但没有提交） |  
-| git diff <FileName> | 查看修改的具体内容 |  
-| git diff HEAD -- <FileName> | 查看文件在版本库和工作区中的区别 |  
+| git diff \<FileName\> | 查看修改的具体内容 |  
+| git diff HEAD -- \<FileName\> | 查看文件在版本库和工作区中的区别 |  
 | git log | 查看近几次的 commit 信息 |  
 | git log --pretty=oneline | 查看由近到远的 commit 信息 |  
 | git reset --hard HEAD^ | 回退到上一个版本<br>HEAD表示当前版本，HEAD^表示上一个版本<br>往上 n 个版本可以写成HEAD~n |
-| git reset --hard <ID> | 回到指定版本 |  
-| cat <FileName> | 查看文件内容 |  
+| git reset --hard \<ID\> | 回到指定版本 |  
+| cat \<FileName\> | 查看文件内容 |  
 | git reflog | 查看每一次操作，包括回退版本的id |  
-| git checkout -- <FileName> | 撤回修改<br>修改后的文件在暂存区，则回到 git add 前的状态<br>修改后的文件没有放在暂存区，则回到和版本库一样的状态 |  
-| git reset HEAD <FileName> | 将暂存区的文件回退到工作区 |  
-| 小结 | 场景1：修改错误的文件在工作区，还没有提交到暂存区，使用git checkout -- <FileName> |  
-| |场景2：修改错误的文件已经add到暂存区，先使用 git reset HEAD <FileName> 回退到工作区，再使用git checkout -- <FileName> |  
+| git checkout -- \<FileName\> | 撤回修改<br>修改后的文件在暂存区，则回到 git add 前的状态<br>修改后的文件没有放在暂存区，则回到和版本库一样的状态 |  
+| git reset HEAD \<FileName\> | 将暂存区的文件回退到工作区 |  
+| 小结 | 场景1：修改错误的文件在工作区，还没有提交到暂存区，使用git checkout -- \<FileName\> |  
+| |场景2：修改错误的文件已经add到暂存区，先使用 git reset HEAD \<FileName\> 回退到工作区，再使用git checkout -- \<FileName\> |  
 | |场景3：修改错误的文件已经commit，使用git reset -- hard HEAD^ 回退到上一个版本|    
-| git rm <FileName> | 删除文件 |  
-| git checkout -b <branchName> | 创建并切换到分支 |  
-| git merge <branchName> | 合并指定分支到当前分支 |  
-| git branch -d <branchName> | 删除指定分支 |  
+| git rm \<FileName\> | 删除文件 |  
+| git checkout -b \<branchName\> | 创建并切换到分支 |  
+| git merge \<branchName\> | 合并指定分支到当前分支 |  
+| git branch -d \<branchName\> | 删除指定分支 |  
