@@ -95,8 +95,8 @@ git reset xx.txt    ——重置暂存区中的文件
 | 命令   |   说明 |  
 |--------|----------------|  
 | pwd | 查看当前路径  |  
-| mkdir <FolderName> | 创建新文件夹 |  
-| cd <FolderName> | 进入文件夹目录下 |  
+| mkdir &lt;FolderName&gt; | 创建新文件夹 |  
+| cd \<FolderName\> | 进入文件夹目录下 |  
 | git init | 生成 .git 文件夹，创建一个空的Git仓库或重新初始化一个现有仓库 |  
 | ls -a | 列出目录中的所有项（包括隐藏项） |  
 | git add <FileName> | 把文件添加到暂存区 |  
