@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <title>这里是页面title</title>
+    </head>
+
+    <style>
+	    body{
+		    background-color:#E0E0FF
+		}
+		
+		h1{
+		    color:white;
+			text-align:center;
+			font-family:楷体
+		}
+	</style>
+	
+    <body>
+        <div id="container_all">
+
+        <div id="header" style="background-color:#0072E3;">
+            <h1>居中的大标题</h1>
+        </div>
+
+        <div id="left_menu" style="height:250px;width:100px;background-color:#FFFF37;float:left;text-align:center">
+            <b>菜单</b><hr>
+            第一条<hr>
+            第二条<hr>
+            第三条<hr>
+        </div>
+
+        <div id="content" style="height:250px;margin-left:120px">
+            <form>
+                账号：<input type="text" name="username"><br>
+                密码：<input type="password" name="password" style="margin-top:5px"><br>
+            </form>
+            <form style="margin-top:5px">
+                <input type="radio" name="sex" value="man" >男
+                <input type="radio" name="sex" value="woman" style="margin-left:10px">女<br>
+            </form>
+            <form style="margin-top:5px">
+                <input type="checkbox" name="fruit" value="apple" >苹果
+                <input type="checkbox" name="fruit" value="banana">香蕉
+                <input type="checkbox" name="fruit" value="peach">桃子<br>
+            </form>
+            <form name="submit_data" action="test1.html" method="get" style="margin-top:5px">
+                <input type="submit" value="确定"><br>
+            </form>
+
+            <script>
+                document.write("插入JavaScript")
+            </script><br/>
+            <button type="button" onclick="myFunction()">确定</button>
+        </div><hr>
+
+
+
+	<img src="app1.jpg" width="180" height="250" />
+	<hr><br/>
+	
+	<p style="color:blue;margin-left:10px;">CSS 内联样式</p>
+	
+	<b>b 表示粗体</b><br>
+	<i>i 表示斜体</i><br>
+	下标<sub>sub</sub><br>
+	上标<sup>sup</sup><br>
+	<br>
+	
+	<table border="1">
+	    <tr>
+		    <th>第1列</th>
+			<th>第2列</th>
+		</tr>
+	    <tr>
+		    <td>第1行，第1列</td>
+			<td>第1行，第2列</td>
+		</tr>
+		<tr>
+		    <td>第2行，第1列</td>
+			<td>第2行，第2列</td>
+		</tr>
+	</table>
+	<br/>
+	
+	无序列表
+	<ul>
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Cola</li>
+	</ul><br/>
+	
+	有序列表
+	<ol>
+	<li>1</li>
+	<li>2</li>
+	</ol><br/>
+	
+	自定义列表
+	<dl>
+	<dt>Coffee</dt>
+	<dd>Milk</dd>
+	</dl>
+
+	下拉选择框
+    <select>
+        <option value = "basketball">Basketball</option>
+        <option value = "football">Football</option>
+        <option value = "volleyball">Volleyball</option>
+        <option value = "table tennis">Table tennis</option>
+    </select>
+	<hr>
+
+    <div id="foot" style="background-color:#3D7878;text-align:center">
+        <a href="http://www.baidu.com" target="_blank">最后放链接</a>
+    </div>
+
+    </body>
+</html>
